@@ -1,0 +1,26 @@
+import React from 'react';
+import './App.css';
+import Header from './component/header/header'
+import Footer from './component/footer/footer'
+import Copy from './component/footer/copyright'
+import HomeScreen from './screens/HomeScreen';
+import SingleProduct from './screens/SingleProduct';
+import {BrowserRouter, Route} from 'react-router-dom'
+
+function App() {
+  return (
+    <BrowserRouter>
+    <div className="App">
+      <Header />
+      <main>
+        <Route path='/' component={HomeScreen} exact></Route>
+        <Route path='/product:id' component={SingleProduct}></Route>
+      </main>
+      <Footer />
+      <Copy />
+    </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

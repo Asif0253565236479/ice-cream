@@ -1,0 +1,9 @@
+.header{ 
+    width: 100%;
+    height: 10vw;
+    background: linear-gradient(90deg , #0b4f77 , #1b660d);
+    display: flex;
+    padding: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+}

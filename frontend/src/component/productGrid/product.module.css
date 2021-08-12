@@ -1,0 +1,41 @@
+.products{ 
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+.grid{ 
+    width: 15vw;
+    height: 27.5vw;
+    margin: 2vw ;
+    border: 1px solid #0c0c0c;
+    border-radius: .5vw;
+    text-align: center;
+    overflow: hidden;
+}
+.grid img{
+    max-width: 15vw;
+    height: 15vw;
+    border-radius: .5vw .5vw 0 0;
+}
+.details{ 
+    padding: 1vw;
+    background: #7e7575;
+    text-align: left;
+    height: 12.5vw;
+}
+.details h4{ 
+   margin: 0;
+   font-size: 1.3vw;
+   color: aliceblue;
+   font-weight: 600;
+}
+.details p{ 
+   margin: .5vw 0;
+   font-size: 1vw;
+   color: aliceblue;
+}
+.details p span{ 
+  
+   font-size: 1vw;
+   color: #fde787;
+   font-weight: 600;
+}

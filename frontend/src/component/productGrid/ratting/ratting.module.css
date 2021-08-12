@@ -1,0 +1,11 @@
+.ratting{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 ;
+}
+.ratting i{ 
+    font-size: 1vw;
+    color: #e9b23a;
+    margin: 0;
+}

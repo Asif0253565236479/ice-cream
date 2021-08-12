@@ -1,0 +1,13 @@
+.copy{ 
+    background: linear-gradient(90deg , #123d0a , #0a293d);
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #515253;
+    padding: 0 5vw;
+    font-size: 1vw;
+}
+a{ 
+    color: #ffffff;
+}
