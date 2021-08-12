@@ -17,3 +17,16 @@ code {
 a{ 
   text-decoration: none;
 }
+.alert{ 
+padding: 2vw;
+border: 1px solid #000000;
+border-radius: .25vw;
+}
+.alert-info{ 
+color: #0b143b;
+background: #a0a0a0;
+}
+.alert-danger{ 
+color: #a02020;
+background: #ad9191;
+}
