@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./product.module.css";
-import { products } from "../../data";
 import Cart from "./addtocart/addtocart";
 import Ratting from "./ratting/ratting";
+import axios from 'axios'
 
-export default function product() {
+export default function Product() {
+   const [products, setProducts] = useState([]);
+   useEffect(() => {
+    const fetchData = async () =>{ 
+     const {data} = await axios.get('/api/products');
+     setProducts(data);
+    };
+    fetchData();
+   }, [])
   return (
     <div className={classes.products}>
       {products.map((item) => {
