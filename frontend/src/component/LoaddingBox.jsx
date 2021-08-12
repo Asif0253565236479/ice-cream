@@ -2,8 +2,9 @@ import React from 'react'
 import classes from './LoaddingBox.module.css'
 export default function LoaddingBox() {
     return (
-        <div className={classes.spin}>
-            <i className='fas fa-star'></i> Loadding...
+        <div >
+           
+            <i className={['fas fa-spinner fa-spin', classes.spin].join(' ')}></i>&nbsp; Loadding...
         </div>
     )
 }
