@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Asif0253565236479/ice-cream/issues"
   },
-  "homepage": "https://github.com/Asif0253565236479/ice-cream#readme"
+  "homepage": "https://github.com/Asif0253565236479/ice-cream#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
