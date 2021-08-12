@@ -6,9 +6,9 @@ export default function singleproduct(props) {
     const product = props.product
      console.log(product)
     return (
-        <div>
-          <div><i className='fas fa-arrow-left'></i></div>
-          <div>
+        <div className={classes.singleproduct}>
+          <div><a href='/' className={classes.back}><i className='fas fa-arrow-left'></i></a></div>
+          <div className={classes.product}>
               <div className={classes.col_1}>
                   <img src={product.image}></img>
               </div>
@@ -18,13 +18,14 @@ export default function singleproduct(props) {
                   <p><Ratting  ratting={product.ratting}/></p>
                   <p><span>{product.reviwe}</span>+ Reviews</p>
                   <p>Price: <span>{product.price}</span></p>
-                  <p> Description: <span>{product.dicc}</span></p>
+                  <p> Description: <span>{product.dice}</span></p>
               </div>
               <div className={classes.col_3}>
                   <p>Sellar</p>
                   <span>{product.brand}</span>
                   <p><Ratting  ratting={product.ratting}/></p>
                   <p>Price: <span>{product.price}</span></p>
+                  <a href='#' className={classes.addtocart}>ADD TO CART</a>
               </div>
           </div>
         </div>

@@ -2,6 +2,8 @@ export const products = [
     {
         id:'1',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
@@ -11,6 +13,8 @@ export const products = [
     {
         id:'2',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
@@ -20,6 +24,8 @@ export const products = [
     {
         id:'3',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'2.2',
@@ -29,6 +35,8 @@ export const products = [
     {
         id:'4',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
@@ -38,6 +46,8 @@ export const products = [
     {
         id:'5',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
@@ -47,6 +57,8 @@ export const products = [
     {
         id:'6',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
@@ -56,6 +68,8 @@ export const products = [
     {
         id:'7',
         name:'T-Shart man',
+        brand:'nick',
+        dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
