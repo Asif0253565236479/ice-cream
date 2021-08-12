@@ -10,11 +10,11 @@ export default function product() {
       {products.map((item) => {
         return (
           <div className={classes.grid} key={item.id}>
-            <a href="#">
+            <a href={`/product/${item.id}`}>
               <img src={item.image}></img>
             </a>
             <div className={classes.details}>
-              <a href="#">
+              <a href={`/product/${item.id}`}>
                 <h4>{item.name}</h4>
               </a>
               <Ratting ratting={item.ratting} />

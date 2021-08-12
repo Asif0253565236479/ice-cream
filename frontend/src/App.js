@@ -14,7 +14,7 @@ function App() {
       <Header />
       <main>
         <Route path='/' component={HomeScreen} exact></Route>
-        <Route path='/product:id' component={SingleProduct}></Route>
+        <Route path='/product/:id' component={SingleProduct}></Route>
       </main>
       <Footer />
       <Copy />
