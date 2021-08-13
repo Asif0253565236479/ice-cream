@@ -1,28 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import classes from "./product.module.css";
 import Cart from "./addtocart/addtocart";
 import Ratting from "./ratting/ratting";
-import axios from "axios";
 import LoaddingBox from "../LoaddingBox";
 import MassageBox from "../MassageBox";
+import {useDispatch, useSelector} from 'react-redux'
+import { ListProducts } from "../../actions/Product.actions";
 
 export default function Product() {
-  const [loadding, setLodding] = useState(false);
-  const [error, setError ] = useState(false);
-  const [products, setProducts] = useState([]);
+const productList = useSelector((state) => state.productList)
+const dispatch = useDispatch()
+const {loadding , error, products} = productList
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLodding(true);
-        const { data } = await axios.get("/api/products");
-        setLodding(false);
-        setProducts(data);
-      } catch (err) {
-        setError(err.message);
-        setLodding( false );
-      }
-    };
-    fetchData();
+    dispatch(ListProducts())
   } , [ ]);
   return (
     <div>
