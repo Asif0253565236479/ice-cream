@@ -7,7 +7,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'120',
+        stok:120,
         image:'/images/p1.jpg'
     },
     {
@@ -18,7 +18,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'0',
+        stok:0,
         image:'/images/p1.jpg'
     },
     {
@@ -29,7 +29,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'2.2',
-        stok:'120',
+        stok:120,
         image:'/images/p1.jpg'
     },
     {
@@ -40,7 +40,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'120',
+        stok:120,
         image:'/images/p1.jpg'
     },
     {
@@ -51,7 +51,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'120',
+        stok:120,
         image:'/images/p1.jpg'
     },
     {
@@ -62,7 +62,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'120',
+        stok:120,
         image:'/images/p1.jpg'
     },
     {
@@ -72,7 +72,7 @@ export const products = [
         dice:'Quality T-shart ',
         price:'$250',
         reviwe:'50',
-        ratting:'4.5',
+        ratting:4.5,
         stok:'120',
         image:'/images/p1.jpg'
     }

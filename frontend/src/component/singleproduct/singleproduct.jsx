@@ -1,9 +1,12 @@
 import React from 'react'
 import classes from './singleproduct.module.css'
 import Ratting from '../productGrid/ratting/ratting'
+import Qty from '../qty/Qty'
 
 export default function singleproduct(props) {
     const product = props.product
+    const addToCartHandular = ()=>{ 
+    }
     return (
         <div className={classes.singleproduct}>
           <div><a href='/' className={classes.back}><i className='fas fa-arrow-left'></i></a></div>
@@ -24,8 +27,9 @@ export default function singleproduct(props) {
                   <span>{product.brand}</span>
                   <p><Ratting  ratting={product.ratting}/></p>
                   <p>Price: <span>{product.price}</span></p>
+                  <Qty product = {product} />
                   {
-                      product.stok > 0 ? ( <a href='#' className={classes.addtocart}>ADD TO CART</a>) :
+                      product.stok > 0 ? ( <a href='#' className={classes.addtocart} onClick={addToCartHandular}>ADD TO CART</a>) :
                       (<p><span>Out Of Stock</span></p>)
                   }
                  
