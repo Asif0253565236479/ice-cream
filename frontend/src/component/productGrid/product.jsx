@@ -40,7 +40,12 @@ const {loadding , error, products} = productList
                   <p>
                     Price : <span>{item.price}</span>
                   </p>
-                  <Cart />
+                  {
+                    item.stok > 0 ? (
+                      <Cart /> 
+                    ) : (<p> <span>Out Of Stock</span> </p>) 
+                  }
+                 
                 </div>
               </div>
             );

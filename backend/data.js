@@ -18,7 +18,7 @@ export const products = [
         price:'$250',
         reviwe:'50',
         ratting:'4.5',
-        stok:'120',
+        stok:'0',
         image:'/images/p1.jpg'
     },
     {

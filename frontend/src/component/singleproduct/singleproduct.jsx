@@ -24,7 +24,11 @@ export default function singleproduct(props) {
                   <span>{product.brand}</span>
                   <p><Ratting  ratting={product.ratting}/></p>
                   <p>Price: <span>{product.price}</span></p>
-                  <a href='#' className={classes.addtocart}>ADD TO CART</a>
+                  {
+                      product.stok > 0 ? ( <a href='#' className={classes.addtocart}>ADD TO CART</a>) :
+                      (<p><span>Out Of Stock</span></p>)
+                  }
+                 
               </div>
           </div>
         </div>
