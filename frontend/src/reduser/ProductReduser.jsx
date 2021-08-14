@@ -1,4 +1,7 @@
 import {
+  PRODUCT_DETAILS_FAIL,
+  PRODUCT_DETAILS_REQUSET,
+  PRODUCT_DETAILS_SUCCESS,
   PRODUCT_LIST_FAIL,
   PRODUCT_LIST_REQUSET,
   PRODUCT_LIST_SUCCESS,
@@ -18,3 +21,18 @@ export const productListReduser = (
       return state;
   }
 };
+
+export const productDetailsReduser =( 
+  state = {loadding: true , product: {}} ,action
+) =>{ 
+  switch (action.type) {
+    case PRODUCT_DETAILS_REQUSET:
+      return { loadding: true };
+    case PRODUCT_DETAILS_SUCCESS:
+      return { loadding: false, product: action.payload };
+    case PRODUCT_DETAILS_FAIL:
+      return { loadding: false, error: action.payload };
+    default:
+      return state;
+  }
+}

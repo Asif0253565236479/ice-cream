@@ -4,7 +4,6 @@ import Ratting from '../productGrid/ratting/ratting'
 
 export default function singleproduct(props) {
     const product = props.product
-     console.log(product)
     return (
         <div className={classes.singleproduct}>
           <div><a href='/' className={classes.back}><i className='fas fa-arrow-left'></i></a></div>

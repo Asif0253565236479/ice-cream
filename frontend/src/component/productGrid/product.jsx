@@ -14,6 +14,7 @@ const {loadding , error, products} = productList
   useEffect(() => {
     dispatch(ListProducts())
   } , [ ]);
+  console.log(products)
   return (
     <div>
       {loadding ? (
