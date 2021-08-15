@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Route path='/cart/:id?' component={CartScreen}></Route>
+      <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path='/' component={HomeScreen} exact></Route>
         <Route path='/product/:id' component={SingleProduct}></Route>
       </main>

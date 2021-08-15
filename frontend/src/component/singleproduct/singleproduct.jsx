@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './singleproduct.module.css'
 import Ratting from '../productGrid/ratting/ratting'
-import Qty from '../qty/Qty'
 
-export default function singleproduct(props) {
+export default function Singleproduct(props) {
     const product = props.product
-    const addToCartHandular = ()=>{ 
-    }
+    const [qty , setQty] = useState(1);
+    const Id = product.id
+
     return (
         <div className={classes.singleproduct}>
           <div><a href='/' className={classes.back}><i className='fas fa-arrow-left'></i></a></div>
@@ -27,9 +27,22 @@ export default function singleproduct(props) {
                   <span>{product.brand}</span>
                   <p><Ratting  ratting={product.ratting}/></p>
                   <p>Price: <span>{product.price}</span></p>
-                  <Qty product = {product} />
+                  
                   {
-                      product.stok > 0 ? ( <a href='#' className={classes.addtocart} onClick={addToCartHandular}>ADD TO CART</a>) :
+                      product.stok > 0 ? (<div><div>
+                        <p>Quantity</p>
+                        <select value={qty} onChange={(e) => setQty(e.target.value)} >
+                        {[...Array(product.stok).keys()].map(
+                                            (x) => (
+                                              <option key={x + 1} value={x + 1}>
+                                                {x + 1}
+                                              </option>
+                                            )
+                                          )}
+            
+                        </select>
+                        
+                    </div > <a href={`/cart/${Id}?qty=${qty}`} className={classes.addtocart}>ADD TO CART</a> </div> ) :
                       (<p><span>Out Of Stock</span></p>)
                   }
                  
