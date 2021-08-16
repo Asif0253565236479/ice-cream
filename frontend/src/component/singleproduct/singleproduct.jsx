@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import classes from './singleproduct.module.css'
 import Ratting from '../productGrid/ratting/ratting'
+import {Link} from 'react-router-dom'
 
 export default function Singleproduct(props) {
     const product = props.product
@@ -9,7 +10,7 @@ export default function Singleproduct(props) {
 
     return (
         <div className={classes.singleproduct}>
-          <div><a href='/' className={classes.back}><i className='fas fa-arrow-left'></i></a></div>
+          <div><Link to='/' className={classes.back}><i className='fas fa-arrow-left'></i></Link></div>
           <div className={classes.product}>
               <div className={classes.col_1}>
                   <img src={product.image}></img>
@@ -42,7 +43,7 @@ export default function Singleproduct(props) {
             
                         </select>
                         
-                    </div > <a href={`/cart/${Id}?qty=${qty}`} className={classes.addtocart}>ADD TO CART</a> </div> ) :
+                    </div > <Link to={`/cart/${Id}?qty=${qty}`} className={classes.addtocart}>ADD TO CART</Link> </div> ) :
                       (<p><span>Out Of Stock</span></p>)
                   }
                  

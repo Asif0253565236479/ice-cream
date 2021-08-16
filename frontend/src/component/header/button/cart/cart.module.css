@@ -3,12 +3,24 @@
     color: #ffffff;
     margin: 0 1vw;
 }
-.cart i{ 
+.cart i { 
     font-size: 1.5vw;
     color: #ffffff; 
     transition: font-size .5s;
+    position: relative;
 }
 .cart i:hover{ 
     font-size: 2.5vw;
     
+}
+.badges{ 
+    position: absolute;
+    background: #a02020;
+    border-radius: 50%;
+    padding: .15vw .5vw;
+    color: #ffffff;
+    font-size: .8vw;
+    z-index: 1;
+    right: 12.5vw;
+    top: 3.5vw;
 }

@@ -6,6 +6,7 @@ import LoaddingBox from "../LoaddingBox";
 import MassageBox from "../MassageBox";
 import {useDispatch, useSelector} from 'react-redux'
 import { ListProducts } from "../../actions/Product.actions";
+import {Link} from 'react-router-dom'
 
 export default function Product() {
 const productList = useSelector((state) => state.productList)
@@ -26,13 +27,13 @@ const {loadding , error, products} = productList
           {products.map((item) => {
             return (
               <div className={classes.grid} key={item.id}>
-                <a href={`/product/${item.id}`}>
+                <Link to={`/product/${item.id}`}>
                   <img src={item.image}></img>
-                </a>
+                </Link>
                 <div className={classes.details}>
-                  <a href={`/product/${item.id}`}>
+                  <Link to={`/product/${item.id}`}>
                     <h4>{item.name}</h4>
-                  </a>
+                  </Link>
                   <Ratting ratting={item.ratting} />
                   <p>
                     Reviews : <span>{item.reviwe}</span>
