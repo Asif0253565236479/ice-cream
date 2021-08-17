@@ -6,6 +6,7 @@ import Copy from './component/footer/copyright'
 import HomeScreen from './screens/HomeScreen';
 import SingleProduct from './screens/SingleProduct';
 import CartScreen from './screens/CartScreen'
+import SingIn from './screens/SingIn'
 import {BrowserRouter, Route} from 'react-router-dom'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
+        <Route path='/singin' component={SingIn}></Route>
       <Route path="/cart/:id?" component={CartScreen}></Route>
         <Route path='/' component={HomeScreen} exact></Route>
         <Route path='/product/:id' component={SingleProduct}></Route>
