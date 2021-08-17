@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import classes from "./Cart.module.css"
 import { useDispatch, useSelector } from 'react-redux'
-import { addToCart } from '../../actions/CartAction'
+import { addToCart, cartRemoveItem } from '../../actions/CartAction'
 import { Link  } from 'react-router-dom'
 
 
@@ -17,8 +17,10 @@ export default function Cart(props) {
   const cart = useSelector((state) => state.cart)
   const { CartItem } = cart;
   
-  const itemRemoveHanduler = (id)=>{ 
+  const itemRemoveHanduler = (id) => { 
     //delete action
+    dispatch(cartRemoveItem(id))
+    console.log(id)
   }
 
   return (
@@ -43,7 +45,7 @@ export default function Cart(props) {
                         </option>
                       ))}
                     </select>
-                    <button type='button' onClick={itemRemoveHanduler(item.product)}>DELETE</button>
+                    <button type='button' onClick={() => itemRemoveHanduler(item.product)}>DELETE</button>
                   </li>
                 )
               })
