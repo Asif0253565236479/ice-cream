@@ -1,3 +1,5 @@
+import bcrypt from 'bcryptjs'
+
 export const products = [
     {
         id:'1',
@@ -75,5 +77,20 @@ export const products = [
         ratting:4.5,
         stok:'120',
         image:'/images/p1.jpg'
+    }
+]
+
+export const users = [
+    {
+        name:'asif',
+        email:'asif@asif.com',
+        password: bcrypt.hashSync('1234', 8),
+        isAdmin:true,
+    },
+    {
+        name:'jone',
+        email:'jone@asif.com',
+        password: bcrypt.hashSync('1234', 8),
+        isAdmin:false,
     }
 ]
