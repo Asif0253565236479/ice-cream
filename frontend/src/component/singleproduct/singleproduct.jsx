@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 export default function Singleproduct(props) {
     const product = props.product
     const [qty , setQty] = useState(1);
-    const Id = product.id
+    const Id = product._id
 
     return (
         <div className={classes.singleproduct}>

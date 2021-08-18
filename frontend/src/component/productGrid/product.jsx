@@ -27,11 +27,11 @@ const {loadding , error, products} = productList
           {products.map((item) => {
             return (
               <div className={classes.grid} key={item.id}>
-                <Link to={`/product/${item.id}`}>
+                <Link to={`/product/${item._id}`}>
                   <img src={item.image}></img>
                 </Link>
                 <div className={classes.details}>
-                  <Link to={`/product/${item.id}`}>
+                  <Link to={`/product/${item._id}`}>
                     <h4>{item.name}</h4>
                   </Link>
                   <Ratting ratting={item.ratting} />
